@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FBI Cyber's Most Wanted</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #222;
+    }
+    header {
+      background-color: #000;
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    header img {
+      height: 60px;
+      display: block;
+    }
+    .header-logo-text {
+      font-family: 'Arial Black', Arial, sans-serif;
+      font-size: 48px;
+      font-weight: 900;
+      letter-spacing: 6px;
+      color: white;
+      user-select: none;
+    }
+    nav {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    .page-title {
+      font-size: 40px;
+      font-weight: bold;
+      margin: 30px 30px 10px;
+      color: #0033a0;
+    }
+    .page-desc {
+      font-size: 18px;
+      margin: 0 30px 30px;
+      max-width: 900px;
+      line-height: 1.6;
+      color: #555;
+    }
+    .wanted-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      padding: 0 30px 60px;
+    }
+    .wanted-card {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background-color: #fafafa;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow 0.3s ease;
+    }
+    .wanted-card:hover {
+      box-shadow: 0 4px 10px rgba(0,51,160,0.5);
+    }
+    .wanted-img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      display: block;
+    }
+    .wanted-content {
+      padding: 15px 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .wanted-name {
+      font-size: 22px;
+      font-weight: bold;
+      color: #0033a0;
+      margin-bottom: 8px;
+    }
+    .wanted-status {
+      background-color: #ff0000;
+      color: white;
+      font-weight: bold;
+      font-size: 12px;
+      padding: 3px 8px;
+      border-radius: 3px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    .wanted-desc {
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 15px;
+    }
+    .details-btn {
+      align-self: flex-start;
+      padding: 10px 18px;
+      background-color: #0033a0;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 3px;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+    .details-btn:hover {
+      background-color: #001f66;
+    }
+    footer {
+      background-color: #0033a0;
+      color: white;
+      padding: 20px 30px;
+      text-align: center;
+      font-size: 14px;
+    }
+    .social-icons {
+      margin-top: 10px;
+    }
+    .social-icons a {
+      display: inline-block;
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      transition: opacity 0.3s ease;
+    }
+    .social-icons a:hover {
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="https://www.fbi.gov/wanted/cyber/aquatic-panda-cyber-threat-actors/@@images/image/high" alt="FBI Logo" />
+    <div class="header-logo-text">FBI</div>
+  </div>
+  <nav>
+    <a href="#">Wanted</a>
+    <a href="#">Most Wanted</a>
+    <a href="#">Cyber</a>
+    <a href="#">Crimes</a>
+  </nav>
+</header>
+
+<h1 class="page-title">Cyber's Most Wanted</h1>
+<p class="page-desc">
+  These individuals are wanted by the FBI for cyber-related crimes affecting the United States and its citizens.  
+  If you have any information concerning these individuals, please contact your local FBI office or the nearest American Embassy or Consulate.
+</p>
+
+<section class="wanted-grid">
+
+  <!-- مثال 1 -->
+  <article class="wanted-card">
+    <img class="wanted-img" src="https://www.fbi.gov/wanted/cyber/yin-kecheng/@@images/image/high" alt="Yin Kecheng" />
+    <div class="wanted-content">
+      <div>
+        <div class="wanted-name">Yin Kecheng</div>
+        <div class="wanted-status">WANTED</div>
+        <p class="wanted-desc">Known for cyber intrusions targeting critical infrastructure.</p>
+      </div>
+      <a href="#" class="details-btn">View Details</a>
+    </div>
+  </article>
+
+  <!-- صورة Dark Storm الثانية -->
+  <article class="wanted-card">
+    <img class="wanted-img" src="C:\Users\click\Downloads\FBI\dark.jpg" alt="Dark Storm" />
+    <div class="wanted-content">
+      <div>
+        <div class="wanted-name">Dark Storm</div>
+        <div class="wanted-status">WANTED</div>
+        <p class="wanted-desc">Believed to be behind several high-profile cyber disruptions across global networks.</p>
+      </div>
+      <a href="#" class="details-btn">View Details</a>
+    </div>
+  </article>
+
+  <!-- مثال 2 -->
+  <article class="wanted-card">
+    <img class="wanted-img" src="https://www.fbi.gov/wanted/cyber/vladislav-yevgenyevich-borovkov/@@images/image/high" alt="Vladislav Yevgenyevich Borovkov" />
+    <div class="wanted-content">
+      <div>
+        <div class="wanted-name">Vladislav Yevgenyevich Borovkov</div>
+        <div class="wanted-status">WANTED</div>
+        <p class="wanted-desc">Accused of orchestrating ransomware attacks.</p>
+      </div>
+      <a href="#" class="details-btn">View Details</a>
+    </div>
+  </article>
+
+  <!-- مثال 3 -->
+  <article class="wanted-card">
+    <img class="wanted-img" src="https://www.fbi.gov/wanted/cyber/alexander-lefterov/@@images/image/preview" alt="Alexander Lefterov" />
+    <div class="wanted-content">
+      <div>
+        <div class="wanted-name">Alexander Lefterov</div>
+        <div class="wanted-status">WANTED</div>
+        <p class="wanted-desc">Linked to multiple cyber fraud schemes.</p>
+      </div>
+      <a href="#" class="details-btn">View Details</a>
+    </div>
+  </article>
+
+  <!-- مثال 4 -->
+  <article class="wanted-card">
+    <img class="wanted-img" src="https://www.fbi.gov/wanted/cyber/samsam-subjects/@@images/image/preview" alt="Samsam Subjects" />
+    <div class="wanted-content">
+      <div>
+        <div class="wanted-name">Samsam Subjects</div>
+        <div class="wanted-status">WANTED</div>
+        <p class="wanted-desc">Involved in ransomware attacks affecting healthcare and government.</p>
+      </div>
+      <a href="#" class="details-btn">View Details</a>
+    </div>
+  </article>
+
+  <!-- المطلوبين الجدد -->
+  <article class="wanted-card">
+    <img class="wanted-img" src="https://www.fbi.gov/wanted/cyber/amir-hossein-nickaein-ravari/@@images/image/preview" alt="Amir Hossein Nickaein Ravari" />
+    <div class="wanted-content">
+      <div>
+        <div class="wanted-name">Amir Hossein Nickaein Ravari</div>
+        <div class="wanted-status">WANTED</div>
+        <p class="wanted-desc">Allegedly involved in cyber espionage activities.</p>
+      </div>
+      <a href="#" class="details-btn">View Details</a>
+    </div>
+  </article>
+
+  <article class="wanted-card">
+    <img class="wanted-img" src="https://www.fbi.gov/wanted/cyber/yevgeniy-igorevich-polyanin/@@images/image/preview" alt="Yevgeniy Igorevich Polyanin" />
+    <div class="wanted-content">
+      <div>
+        <div class="wanted-name">Yevgeniy Igorevich Polyanin</div>
+        <div class="wanted-status">WANTED</div>
+        <p class="wanted-desc">Suspected of conducting ransomware attacks against critical infrastructure.</p>
+      </div>
+      <a href="#" class="details-btn">View Details</a>
+    </div>
+  </article>
+
+  <article class="wanted-card">
+    <img class="wanted-img" src="https://www.fbi.gov/wanted/cyber/sergey-vladimirovich-detistov/@@images/image/preview" alt="Sergey Vladimirovich Detistov" />
+    <div class="wanted-content">
+      <div>
+        <div class="wanted-name">Sergey Vladimirovich Detistov</div>
+        <div class="wanted-status">WANTED</div>
+        <p class="wanted-desc">Alleged member of a cybercrime organization targeting financial institutions.</p>
+      </div>
+      <a href="#" class="details-btn">View Details</a>
+    </div>
+  </article>
+
+  <article class="wanted-card">
+    <img class="wanted-img" src="https://www.fbi.gov/wanted/cyber/pavel-valeryevich-frolov/@@images/image/preview" alt="Pavel Valeryevich Frolov" />
+    <div class="wanted-content">
+      <div>
+        <div class="wanted-name">Pavel Valeryevich Frolov</div>
+        <div class="wanted-status">WANTED</div>
+        <p class="wanted-desc">Accused of developing and distributing malicious software.</p>
+      </div>
+      <a href="#" class="details-btn">View Details</a>
+    </div>
+  </article>
+
+  <article class="wanted-card">
+    <img class="wanted-img" src="https://www.fbi.gov/wanted/cyber/jon-chang-hyok/@@images/image/preview" alt="Jon Chang Hyok" />
+    <div class="wanted-content">
+      <div>
+        <div class="wanted-name">Jon Chang Hyok</div>
+        <div class="wanted-status">WANTED</div>
+        <p class="wanted-desc">Suspected of involvement in state-sponsored cyber attacks.</p>
+      </div>
+      <a href="#" class="details-btn">View Details</a>
+    </div>
+  </article>
+
+  <article class="wanted-card">
+    <img class="wanted-img" src="https://www.fbi.gov/wanted/cyber/anatoliy-sergeyevich-kovalev/@@images/image/preview" alt="Anatoliy Sergeyevich Kovalev" />
+    <div class="wanted-content">
+      <div>
+        <div class="wanted-name">Anatoliy Sergeyevich Kovalev</div>
+        <div class="wanted-status">WANTED</div>
+        <p class="wanted-desc">Alleged participant in cyber operations targeting US elections.</p>
+      </div>
+      <a href="#" class="details-btn">View Details</a>
+    </div>
+  </article>
+
+</section>
+
+<footer>
+  &copy; 2025 Federal Bureau of Investigation
+  <div class="social-icons">
+    <a href="https://www.facebook.com/FBI" target="_blank">Facebook</a> |
+    <a href="https://twitter.com/FBI" target="_blank">Twitter</a> |
+    <a href="https://www.youtube.com/user/fbi" target="_blank">YouTube</a> |
+    <a href="https://www.instagram.com/fbi" target="_blank">Instagram</a>
+  </div>
+</footer>
+
+</body>
+</html>
